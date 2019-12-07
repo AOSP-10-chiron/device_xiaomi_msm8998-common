@@ -59,17 +59,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.eis.enable=1 \
-    persist.camera.set.afd=4 \
     persist.camera.xm.green.b=0.96 \
     persist.camera.xm.green.r=0.97 \
     persist.ts.rtmakeup=false \
     persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.eis.enabled=1 \
     persist.vendor.camera.set.afd=4 \
+    persist.vendor.camera.stats.test=5 \
     persist.vendor.dualcam.lpm.enable=1 \
     vidc.enc.dcvs.extra-buff-count=2 \
     camera.shutter_sound.blacklist=com.android.camera \
-    vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap \
+    vendor.camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.lineageos.snap \
     vendor.camera.hal1.packagelist=com.tencent.mm,com.eg.android.AlipayGphone,com.android.camera \
     persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap
 
