@@ -317,6 +317,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.spectrum.rc \
     init.recovery.qcom.rc \
+    init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc
 
