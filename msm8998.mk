@@ -382,10 +382,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    android.frameworks.bufferhub@1.0.vendor_32 \
-    libdng_sdk.vendor_32 \
-    libstdc++.vendor_32 \
-    vndk-ext
+    vndk_package
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
