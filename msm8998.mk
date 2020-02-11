@@ -343,7 +343,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libril-wrapper \
     librmnetctl
 
 # Seccomp policy
@@ -378,10 +377,6 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.1-service.msm8998
-
-# VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \

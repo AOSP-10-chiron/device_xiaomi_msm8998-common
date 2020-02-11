@@ -142,6 +142,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_min_cpu=0 \
     ro.vendor.qti.sys.fw.bg_apps_limit=60
 
+# QC framework value-adds
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.va_aosp.support=1
+
+PRODUCT_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
@@ -156,7 +163,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.report_codec=1 \
     persist.vendor.radio.sib16_support=1 \
-    rild.libpath=/vendor/lib64/libril-wrapper.so \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=22,22 \
     ro.vendor.use_data_netmgrd=true \
@@ -200,7 +207,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
 # Wlan
